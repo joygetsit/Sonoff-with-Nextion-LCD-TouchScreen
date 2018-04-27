@@ -697,7 +697,7 @@ void mqtt_reconnect()
     addLog_P(LOG_LEVEL_INFO, S_LOG_MQTT, PSTR(D_CONNECTED));
     ////////////Nextioncode///////////
     mqttClient.subscribe(mqttSubscription.c_str());
-    mqttClient.publish(mqttCommandTopic.c_str(), "ONJI");
+    //mqttClient.publish(mqttCommandTopic.c_str(), "ONJI");  /*Uncomment for testing Mqtt working with this code*/
 
     // publish discovery messages for Home Assistant MQTT Discovery
     //mqttClient.publish(mqttDiscoBinaryConfigTopic.c_str(), mqttDiscoBinaryConfigPayload.c_str(), true);
